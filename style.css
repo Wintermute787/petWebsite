@@ -1,6 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
+
 }
 
 nav {
@@ -19,6 +20,7 @@ img {
 nav ul {
   display: flex;
   list-style: none;
+  /* position: relative; */
 }
 
 nav ul li {
@@ -26,13 +28,29 @@ nav ul li {
   justify-content: space-between;
   margin: 0 20px;
   text-decoration: none;
+  position: relative;
   transition: all .2s;
 }
 
-nav ul li:hover {
+nav ul li a::after {
+  content: '';
+  border-bottom: 2px solid red;
+  width: 0;
+  position: absolute;
+  left: 0;
+  transition: all .2s;
+
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/* nav ul li:hover {
   transform: scale(1.2);
   color: red;
-}
+  border-bottom: 1px solid red;
+} */
 
 nav ul a {
   text-decoration: none;
