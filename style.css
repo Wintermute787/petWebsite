@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+
+
+
+
+}
+
+nav ul li {
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 20px;
+  text-decoration: none;
+  transition: all .2s;
+
+
+}
+
+
+nav ul li:hover {
+  transform: scale(1.2);
+  color: red;
+}
+
+
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.mainTitle {
+  align-self: center;
+}
+
+.headerimage {
+  max-width: 50%;
+  align-self: center;
+}
+
+.centered {
+  align-self: center;
+}
+
+.content {
+  margin: 0 10%;
+}
+
+.Rivals {
+  display: flex;
+}
+
+.Rivals li {
+  list-style: none;
+}
+
+.Rivals li h3 {
+  text-align: center;
+}
